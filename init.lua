@@ -16,5 +16,6 @@ vim.opt.shiftwidth = 4
 vim.keymap.set("n", "<C-j>", function()
 	vim.diagnostic.goto_next()
 end, {})
+vim.diagnostic.config({ signs = false })
 
 require("lazy").setup("plugins")
