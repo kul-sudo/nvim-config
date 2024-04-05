@@ -10,9 +10,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
+
 vim.opt.number = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.scrolloff = 8
 vim.keymap.set("n", "<C-j>", function()
 	vim.diagnostic.goto_next()
 end, {})
