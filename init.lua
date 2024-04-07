@@ -15,6 +15,7 @@ vim.opt.number = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 8
+vim.opt.swapfile = false
 
 vim.keymap.set("n", "<C-j>", function()
 	vim.diagnostic.goto_next()
